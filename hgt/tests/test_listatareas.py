@@ -1,9 +1,6 @@
 import pytest
 from hgt.listatareas import ListaTareas
 
-
-
-
 @pytest.fixture
 def lista():
     return ListaTareas()
