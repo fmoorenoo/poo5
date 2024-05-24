@@ -9,7 +9,7 @@ class Archivo:
             return ''
         with f:
             return f.readline()
-    
+        
 
     def escribir(self, contenido):
         try:

@@ -11,7 +11,8 @@ def archivo():
     return Archivo(FILENAME)
 
 def test_archivoLeer(archivo):
-    os.remove(FILENAME)
+    if os.path.exists(FILENAME):
+        os.remove(FILENAME)
     assert archivo.leer() == ''
 
 def test_archivoEscribir(archivo):
